@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_step_list_scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideOverlay"
+    app:layoutManager="LinearLayoutManager"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ItemDetailActivity">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/recipe_ingredients_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ingredient_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/amita"
+                    android:padding="10dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/tv_ingredients"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ingredient_title_layout"
+                android:background="@color/colorSubLayout"
+                android:fontFamily="sans-serif-light"
+                android:padding="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:text="@string/tvIngredients_sampleText"
+                android:textColor="@color/colorTextLayout"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bakingSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recipe_ingredients_layout"
+            android:elevation="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/amita"
+                android:padding="10dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="0dp"
+                android:text="@string/tv_bakingSteps"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_recipeSteps"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorSubLayout"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="LinearLayoutManager"
+                tools:listitem="@layout/step_item" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

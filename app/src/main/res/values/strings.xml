@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">The Baking App</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_baking_step_detail">Baking step details</string>
+    <string name="tv_ingredients">Ingredients</string>
+    <string name="tv_bakingSteps">Baking steps</string>
+    <string name="recipeImage_contentDesc">Recipe image/icon goes here</string>
+    <string name="tv_recipeName">Recipe name</string>
+    <string name="tv_recipeServingSize">Recipe serving size</string>
+    <string name="bakingStepDetail_contentDesc">Image to go along with baking step detail goes here</string>
+    <string name="noVideoURL_content_desc">Image to load when no videoURL available</string>
+    <string name="tv_nextButton">Next</string>
+    <string name="tv_previousButton">Previous</string>
+    <string name="bakingSteps_sampleText">baking steps baking steps baking steps baking steps baking steps baking steps baking steps baking steps</string>
+    <string name="default_widget_text">Please add a recipe from menu to follow through in widget.</string>
+    <string name="widget_sample_text">Add widget to follow through here later</string>
+    <string name="tvIngredients_sampleText">chocolate chocolate</string>
+</resources>

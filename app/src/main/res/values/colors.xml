@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#561A1A</color>
+    <color name="colorPrimary">#B13E3E</color>
+    <color name="colorAccent">#BD945C</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#111111</color>
+
+    <color name="colorWidgetTextView">#A47A4E4E</color>
+
+    <color name="colorSubLayout">#FFFFFF</color>
+    <color name="colorTextLayout">#3D301E</color>
+</resources>

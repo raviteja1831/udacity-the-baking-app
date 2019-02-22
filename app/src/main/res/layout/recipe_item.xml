@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@color/colorWhite"
+    android:elevation="2dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_recipeImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/recipeImage_contentDesc"
+        android:paddingStart="0dp"
+        android:paddingEnd="20dp"
+        android:src="@drawable/pastry" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_recipeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/just_me_again_down_here"
+            android:text="@string/tv_recipeName"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_servings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/baumans"
+            android:text="@string/tv_recipeServingSize"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

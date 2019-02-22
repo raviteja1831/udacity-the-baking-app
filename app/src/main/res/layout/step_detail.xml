@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:resize_mode="fixed_height" />
+
+    <ImageView
+        android:id="@+id/iv_noVideoURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:contentDescription="@string/noVideoURL_content_desc"
+        android:scaleType="centerInside"
+        android:src="@drawable/no_video_error" />
+
+    <ImageView
+        android:id="@+id/iv_bakingStepDetail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/playerView"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/bakingStepDetail_contentDesc"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_bakingStepDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_navigationButtons"
+        android:layout_below="@id/iv_bakingStepDetail"
+        android:background="@color/colorSubLayout"
+        android:fontFamily="casual"
+        android:padding="16dp"
+        android:textColor="@color/colorTextLayout"
+        android:textSize="16sp"
+        tools:context="com.android.thebakingapp.fragment.BakingStepDetailFragment" />
+
+    <RelativeLayout
+        android:id="@+id/layout_navigationButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/tv_nextButton"
+            style="@style/NavigationStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/tv_nextButton" />
+
+        <TextView
+            android:id="@+id/tv_backButton"
+            style="@style/NavigationStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="30dp"
+            android:text="@string/tv_previousButton" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tv_ingredients">Ingredients</string>
+    <string name="tv_bakingSteps">Baking steps</string>
+    <string name="tv_recipeName">Recipe name</string>
+    <string name="tv_recipeServingSize">Recipe serving size</string>
+    <string name="bakingStepDetail_contentDesc">Image to go along with baking step detail goes here</string>
+    <string name="tv_nextButton">Next</string>
+    <string name="tv_previousButton">Previous</string>
+</resources>

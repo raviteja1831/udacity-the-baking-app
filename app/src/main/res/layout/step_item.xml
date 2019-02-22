@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_bakingSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:padding="2dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:text="@string/bakingSteps_sampleText"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="@color/colorTextLayout"
+        android:textSize="18sp" />
+¬
+</LinearLayout>
